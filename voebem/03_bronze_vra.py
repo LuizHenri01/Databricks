@@ -127,3 +127,7 @@ display(
         ORDER BY _arquivo_origem
     """)
 )
+
+
+# COMMAND ----------
+spark.read.text("/Volumes/voebem/bronze/arquivos/vra/").limit(5).show(truncate=False)
